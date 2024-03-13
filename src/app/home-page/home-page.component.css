@@ -1,0 +1,43 @@
+.center-img {
+    display: block;
+    margin: auto;
+    height: 90%;
+    width: 70%;
+
+}
+
+.allpage {
+    width: 100%;
+    margin-top: 6%;
+color: black;
+background-color: #f5f2ed;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent; /* צבע רקע שקוף */
+    color: black; /* צבע טקסט שחור */
+    border: none; /* הסרת גבולות */
+    font-size: 2rem; /* גודל טקסט */
+    margin-top: -50px; /* מיקום למעלה קצת */
+}
+
+/* סגנון עבור החצים */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: black; /* צבע רקע של החצים */
+    color: white; /* צבע הטקסט של החצים */
+    opacity: 0.5; /* שקיפות של החצים כאשר העכבר לא מעליהם */
+}
+
+/* סגנון עבור החצים כאשר העכבר מעליהם */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: black; /* צבע רקע של החצים */
+    color: white; /* צבע הטקסט של החצים */
+    opacity: 0.9; /* שקיפות של החצים כאשר העכבר מעליהם */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black !important; /* Change this to the color you desire */
+}

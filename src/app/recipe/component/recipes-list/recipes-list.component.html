@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-vCgHm37HFbcF1IgGXU8n9OENc2MqXe3N2PzIVBwMBj/kX8n34fwvKqMzRWAw7iXs39uazN+JK0JlP9nGnugSng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<p-sidebar [(visible)]="sidebarVisible2" position="right" class="custom-sidebar">
+
+
+  <div id="time-slider" class="slider">
+    <h3 class="h-filter">זמן הכנה</h3>
+    <div>
+      <mat-slider class="slider"
+                  orientation="vertical"
+                  [color]="'accent'"
+                  [style.width.vw]="12"
+                  class="example-margin"
+                  [disabled]="false"
+                  [max]="100"
+                  [min]="0"
+                  [step]="1"
+                  [discrete]="true"
+                  [showTickMarks]="false"
+                  (input)="filterByTime(value1)">
+        <input matSliderThumb [(ngModel)]="value1" #slider>
+      </mat-slider>
+    </div>
+  </div>
+  <div id="level-slider" class="slider">
+    <h3 class="h-filter">דרגת קושי</h3>
+    <div>
+      <mat-slider class="slider"
+                  orientation="vertical"
+                  [color]="'accent'"
+                  [style.width.vw]="12"
+                  class="example-margin"
+                  [disabled]="disabled"
+                  [max]="5"
+                  [min]="1"
+                  [step]="step"
+                  [discrete]="thumbLabel"
+                  [showTickMarks]="showTicks"
+                  (input)="filterByDifficulty(value)">
+        <input matSliderThumb [(ngModel)]="value" #slider>
+      </mat-slider>
+    </div>
+  </div>
+  <section class="categories-section">
+    <h4 class="h-filter">בחר קטגוריה</h4>
+    
+    <p>עוגות <mat-checkbox color="my-primary" (change)="filterByCategory(1)"></mat-checkbox></p>
+    <p>עוגיות <mat-checkbox (change)="filterByCategory(2)"></mat-checkbox></p>
+    <p>קינוחים <mat-checkbox (change)="filterByCategory(3)"></mat-checkbox></p>
+    <p>פטיפורים <mat-checkbox (change)="filterByCategory(4)"></mat-checkbox></p>
+    
+  </section>
+</p-sidebar>
+
+<button mat-button id="buttonSideBar" (click)="sidebarVisible2 = true" *ngIf="sidebarVisible2 !== true">
+  <mat-icon color="black">filter_alt</mat-icon>
+  סינון
+</button>
+
+<div class="recipes-list" id="recipe-list">
+  <app-recipe-card *ngFor="let recipe of filteredRecipes; let i=index" [index]="recipe.recipeCode"></app-recipe-card>
+
+  <div class="h-filter1">
+    <div class="custom-input">
+      <input class="narrow-input" type="text" placeholder="חפש מתכון כאן" [(ngModel)]="recipeNameFilter" (ngModelChange)="filterByName()">
+      <button mat-icon-button>
+        <mat-icon style="color: #841f44;">search</mat-icon>
+      </button>
+    </div>
+  </div>

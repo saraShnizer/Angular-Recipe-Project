@@ -1,0 +1,68 @@
+<div class="recipe-container">
+  <div class="recipe-header">
+    <div class="recipe-img">
+      
+
+      <img mat-card-image [src]="recipe.imageRoute" alt="תמונת מתכון">
+    </div>
+    <div class="recipe-details">
+      <div class="in-recipeDetails">
+        <div *ngIf="category" class=" detail category-details">
+          <mat-icon>{{ category.iconRoute }}</mat-icon>
+          <div>{{ category.name }}</div>
+        </div>
+        <div class="recipe-name"><b>{{ recipe.recipeName }}</b></div>
+        <span><br><br><br><br>!מתכון חלומי שכולם אוהבים <br><br>!!!גם יפה גם מרשים וגם... טעים<br><br>👄רק מכינים וכבר נגמר </span>
+        <div id="user-created"> <mat-card-subtitle><b>מאת: </b>{{user.name }}</mat-card-subtitle>
+          <div id="space"></div>
+          <div *ngIf="user" mat-card-avatar class="usercircle">{{ user.name[0] }}</div>
+        </div>
+        <button class="white" mat-button *ngIf="isCurrentUserRecipeOwner()" class="delete-button" (click)="deleteRecipe()">מחיקת
+          <mat-icon>delete</mat-icon>  מתכון</button>
+      </div>
+
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" id="list-group-item4">
+      <mat-icon>local_grocery_store</mat-icon>
+      <h3 class="list-group-item-h3"><b>מספר הרכיבים</b></h3>
+      {{ recipe.ingredients.length }}
+    </li>
+    <li class="list-group-item">
+      <mat-icon> history_toggle_off</mat-icon>
+      <h3 class="list-group-item-h3"><b> זמן ההכנה</b></h3>
+      {{ recipe.preparationTimeInMinutes }}
+    </li>
+    <li class="list-group-item">
+      <mat-icon> star_rate</mat-icon>
+      <h3 class="list-group-item-h3"><b>רמת הקושי</b></h3>
+      {{ recipe.difficultyLevel }}
+    </li>
+    <li class="list-group-item">
+      <mat-icon> category</mat-icon>
+      <h3 class="list-group-item-h3"><b>קטגוריה</b></h3>
+      {{ recipe.categoryCode }}
+    </li>
+  </ul>
+</div>
+
+<div class="recipealldetails">
+  <div class="recipe-ingredients">
+    <div class="allitems">
+      <h2 class="list-h2"><b>מרכיבים:</b></h2>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="recipe-instructions">
+    <h2 class="list-h2"><b>הוראות הכנה:</b></h2>
+    <ol>
+      <li *ngFor="let step of recipe.preparationSteps">{{ step }}</li>
+    </ol>
+  </div>
+  <div class="sof">!!!בתאבון</div>
+</div>
+
+
