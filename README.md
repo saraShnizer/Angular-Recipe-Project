@@ -1,3 +1,5 @@
+הערה חשובה!
+לצורך הרצת הפרויקט יש להכניס את הפקודה: npm i --force
 # RecipeProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
