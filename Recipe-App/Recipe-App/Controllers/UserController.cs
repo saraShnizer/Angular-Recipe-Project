@@ -46,7 +46,14 @@ namespace Recipe_App.Controllers
                 Name = "דן כהן",
                 Address = "רמת גן",
                 Email = "dan@gmail.com",
-                Password = "shira"
+                Password = "dan"
+            },
+               new User{
+                Code = 5,
+                Name = "גילה דניאל",
+                Address = "רמת גן",
+                Email = "dan@gmail.com",
+                Password = "dan"
             }
         };
 

@@ -18,7 +18,7 @@ namespace Recipe_App.Controllers
         DateAdded = DateTime.Now,
         Ingredients = new List<string> { "Flour", "Sugar", "Cocoa Powder", "Eggs", "Milk" },
         PreparationSteps = new List<string> { "Preheat oven to 350°F", "Mix dry ingredients", "Add wet ingredients", "Bake for 30 minutes" },
-        UserCode = 4,
+        UserCode = 0,
         ImageRoute = "../../../../assets/images/recipe-images/29.jpg"
       },
      new Recipe
@@ -65,13 +65,13 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
 {
     RecipeCode = 21,
     RecipeName = "עוגיות פיסטוק",
-    CategoryCode = 1,
+    CategoryCode = 2,
     PreparationTimeInMinutes = 100,
     DifficultyLevel = 5,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 4,
     ImageRoute = "../../../../assets/images/recipe-images/36.jpg"
 },
      new Recipe
@@ -121,7 +121,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
         "מוזגים כל חלק לתוך תבנית אפייה ואופים כ-17-18 דקות",
         "מצננים ומסירים מהתבנית לפני ההרכבה"
     },
-        UserCode = 1,
+        UserCode = 0,
         ImageRoute = "../../../../assets/images/recipe-images/9.jpg"
 
       },
@@ -185,33 +185,33 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות פרנהייט", "ערבב את המרכיבים היבשים", "הוסף את המרכיבים הרטובים", "אפה למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 5,
     ImageRoute = "../../../../assets/images/recipe-images/18.jpg"
 },
      new Recipe
 {
     RecipeCode = 11,
     RecipeName = " עוגת קרמל ",
-    CategoryCode = 3,
+    CategoryCode = 1,
     PreparationTimeInMinutes = 20,
     DifficultyLevel = 5,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות פרנהייט", "ערבב את המרכיבים היבשים", "הוסף את המרכיבים הרטובים", "אפה למשך 30 דקות" },
-    UserCode = 5,
+    UserCode = 2,
     ImageRoute = "../../../../assets/images/recipe-images/22.jpg"
 },
      new Recipe
       {
         RecipeCode = 12,
         RecipeName = "עוגת קומות",
-        CategoryCode = 5,
+        CategoryCode = 1,
         PreparationTimeInMinutes = 15,
         DifficultyLevel = 1,
         DateAdded = DateTime.Now,
         Ingredients = new List<string> { "Flour", "Sugar", "Cocoa Powder", "Eggs", "Milk" },
         PreparationSteps = new List<string> { "Preheat oven to 350°F", "Mix dry ingredients", "Add wet ingredients", "Bake for 30 minutes" },
-        UserCode = 1,
+        UserCode = 2,
         ImageRoute = "../../../../assets/images/recipe-images/8.jpg"
       },
      new Recipe
@@ -224,7 +224,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 0,
     ImageRoute = "../../../../assets/images/recipe-images/20.jpg"
 },
      new Recipe
@@ -237,7 +237,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 5,
     ImageRoute = "../../../../assets/images/recipe-images/10.jpg"
 },
      new Recipe
@@ -250,20 +250,20 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 4,
     ImageRoute = "../../../../assets/images/recipe-images/11.jpg"
 },
     new Recipe
 {
     RecipeCode = 16,
     RecipeName = "טורט קדאיף",
-    CategoryCode = 3,
+    CategoryCode = 1,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 2,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 3,
     ImageRoute = "../../../../assets/images/recipe-images/30.jpg"
 },
     new Recipe
@@ -276,7 +276,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 0,
     ImageRoute = "../../../../assets/images/recipe-images/17.jpg"
 },
 
@@ -304,7 +304,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 4,
     ImageRoute = "../../../../assets/images/recipe-images/46.jpg"
 },
 
@@ -312,7 +312,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
 {
     RecipeCode = 18,
     RecipeName = "עוגת טריקולד",
-    CategoryCode = 5,
+    CategoryCode = 1,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 4,
     DateAdded = DateTime.Now,
@@ -324,21 +324,21 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
 new Recipe
 {
     RecipeCode = 19,
-    RecipeName = "מקרונים ",
+    RecipeName = "מקרונים",
     CategoryCode = 3,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 2,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 1,
+    UserCode = 3,
     ImageRoute = "../../../../assets/images/recipe-images/32.jpg"
 },
   new Recipe
 {
     RecipeCode = 20,
     RecipeName = " פאי תותים",
-    CategoryCode = 3,
+    CategoryCode = 1,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 2,
     DateAdded = DateTime.Now,
@@ -352,19 +352,19 @@ new Recipe
                                                                                                     {
     RecipeCode = 22,
     RecipeName = "פיננסייר לוז",
-    CategoryCode = 1,
+    CategoryCode = 2,
     PreparationTimeInMinutes = 65,
-    DifficultyLevel = 2,
+    DifficultyLevel = 5,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 3,
+    UserCode = 5,
     ImageRoute = "../../../../assets/images/recipe-images/37.jpg"
 },
 new Recipe
                                                                                                     {
     RecipeCode = 35,
-    RecipeName = "עיגולי לוטוס",
+    RecipeName = "שוקולד לוטוס",
     CategoryCode = 4,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 1,
@@ -378,13 +378,13 @@ new Recipe
                                                                                                     {
     RecipeCode = 36,
     RecipeName = "עיגולי פיסטוק",
-    CategoryCode = 3,
+    CategoryCode = 4,
     PreparationTimeInMinutes = 65,
     DifficultyLevel = 4,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 3,
+    UserCode = 2,
     ImageRoute = "../../../../assets/images/recipe-images/48.jpg"
 },
 new Recipe
@@ -397,14 +397,14 @@ new Recipe
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
     PreparationSteps = new List<string> { "לחמם את התנור ל-350 מעלות פרנהייט", "לערבב את המרכיבים היבשים", "להוסיף את המרכיבים הרטובים", "לאפות בתנור למשך 30 דקות" },
-    UserCode = 3,
+    UserCode = 5,
     ImageRoute = "../../../../assets/images/recipe-images/49.jpg"
 },
                                                                                                                                                                                                                     new Recipe
                                                                                                     {
     RecipeCode = 23,
     RecipeName = "עוגיות לימון",
-    CategoryCode = 1,
+    CategoryCode = 2,
     PreparationTimeInMinutes = 25,
     DifficultyLevel = 2,
     DateAdded = DateTime.Now,
