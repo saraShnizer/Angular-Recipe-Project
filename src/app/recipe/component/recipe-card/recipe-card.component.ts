@@ -92,6 +92,51 @@ isCreatorUser(): boolean {
   return userCode && +userCode === this.createdByUserCode;
 }
 
+deleteRecipe() {
+  const userCode = sessionStorage.getItem('userCode');
+  if (userCode !== null && +userCode === this.recipe.userCode) {
+    Swal.fire({
+      title: 'האם הינך בטוח שברצונך למחוק את המתכון?',
+      text: "לא תהיה אפשרות לבטל את הפעולה פעם שהיא נעשתה",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'כן, מחק את המתכון'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // ביצוע פעולת המחיקה כאן
+        this.recipeService.deleteRecipe(this.recipe.recipeCode).subscribe({
+          next: () => {
+            Swal.fire(
+              'נמחק!',
+              'המתכון נמחק בהצלחה.',
+              'success'
+            );
+            // הפניה לרשימת המתכונים
+            this.router.navigate(['/recipe']);
+          },
+          error: (err) => {
+            console.log(err);
+            Swal.fire(
+              'שגיאה!',
+              'אירעה שגיאה במחיקת המתכון.',
+              'error'
+            );
+          }
+        });
+      }
+    });
+  } else {
+    // אם המשתמש הנוכחי אינו היוצר של המתכון, הצג הודעה שהוא אינו מורשה לבצע מחיקה
+    Swal.fire(
+      'המשתמש אינו מורשה',
+      'רק היוצר של המתכון יכול לבצע מחיקה.',
+      'error'
+    );
+  }
+}
+
 }
 
 

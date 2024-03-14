@@ -5,7 +5,9 @@
       <div *ngIf="createdByUsername" mat-card-avatar class="usercircle">{{ createdByUsername[0] }}</div>
       <mat-card-title>{{ recipe.recipeName }}</mat-card-title>
       <mat-card-subtitle>מאת: {{createdByUsername }}</mat-card-subtitle>
-
+      <button mat-icon-button (click)="deleteRecipe()" >
+        <mat-icon>delete</mat-icon>
+    </button>
     </mat-card-header>
     <img  (click)="toAllDetails()"  mat-card-image [src]="recipe.imageRoute" alt="תמונת מתכון">
     <mat-card-content>

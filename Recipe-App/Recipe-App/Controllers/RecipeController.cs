@@ -245,7 +245,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     RecipeCode = 15,
     RecipeName = "קרמבו חלבי",
     CategoryCode = 3,
-    PreparationTimeInMinutes = 65,
+    PreparationTimeInMinutes = 15,
     DifficultyLevel = 2,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
@@ -284,7 +284,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
      new Recipe
 {
     RecipeCode = 31,
-    RecipeName = "כוסיות ",
+    RecipeName = "כוסיות מילקי",
     CategoryCode = 3,
     PreparationTimeInMinutes = 30,
     DifficultyLevel = 2,
@@ -299,7 +299,7 @@ PreparationSteps = new List<string> { "חמם את התנור ל-350 מעלות 
     RecipeCode = 32,
     RecipeName = "שייק קפה",
     CategoryCode = 3,
-    PreparationTimeInMinutes = 20,
+    PreparationTimeInMinutes = 10,
     DifficultyLevel = 3,
     DateAdded = DateTime.Now,
     Ingredients = new List<string> { "קמח", "סוכר", "אבקת קקאו", "ביצים", "חלב" },
