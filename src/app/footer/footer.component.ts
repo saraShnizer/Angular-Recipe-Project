@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Router, RouterModule } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { NgModule } from '@angular/core';
-
+import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { cibGoogle, cibInstagram, cibTwitter,cibLinkedin,cibGithub,cibFacebook} from '@coreui/icons';
 
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatIconModule,RouterModule],
+  imports: [MatIconModule,RouterModule,IconModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
   
-  constructor(private route: Router) {
+  constructor(private route: Router,public iconSet: IconSetService) {
+    {
+      iconSet.icons = { cibGoogle, cibInstagram, cibTwitter,cibLinkedin,cibGithub,cibFacebook };
+    }
+    
   }
 
 }
